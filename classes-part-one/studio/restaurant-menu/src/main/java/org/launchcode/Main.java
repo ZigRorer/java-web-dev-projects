@@ -3,6 +3,9 @@ package org.launchcode;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+	MenuItem burger = new MenuItem("Burger", "5.99", "Main course", "true", "false");
+    Menu mainCourse = new Menu("Main Course");
     }
+    
+    
 }
