@@ -14,8 +14,13 @@ public class Menu {
         this.items = items;
     }
 
+    public void addItems(MenuItem item) {
+        this.items.add(item);
+    }
 
-    public Menu(String menuName) {
+    public Menu(String menuName, ArrayList<MenuItem> menuItem) {
         this.menuName = menuName;
+        this.items = menuItem;
+
     }
 }

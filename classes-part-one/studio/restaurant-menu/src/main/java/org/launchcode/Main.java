@@ -1,11 +1,20 @@
 package org.launchcode;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
-	MenuItem burger = new MenuItem("Burger", "5.99", "Main course", "true", "false");
-    Menu mainCourse = new Menu("Main Course");
+
+        ArrayList<MenuItem> items = new ArrayList<MenuItem>();
+
+	MenuItem burger = new MenuItem("Burger", 5.99, "Main course", "Cheesy Burger", false, false);
+    items.add(burger);
+    MenuItem pizza = new MenuItem("Pizza", 10.99, "Main course", "Sausage pizza", false, false);
+
+    Menu mainCourse = new Menu("Main Course", items);
+    //Menu appetizers = new Menu("Appetizers", items);
+
+    System.out.println(mainCourse.getItems().get(0).getName());
     }
-    
-    
 }

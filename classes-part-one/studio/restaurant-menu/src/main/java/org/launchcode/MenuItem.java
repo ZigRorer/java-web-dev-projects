@@ -16,4 +16,12 @@ public class MenuItem {
         this.isNew = isNew;
         this.isOutOfStock = isOutOfStock;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
