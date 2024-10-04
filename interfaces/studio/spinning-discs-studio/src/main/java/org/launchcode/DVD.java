@@ -2,8 +2,8 @@ package org.launchcode;
 
 public class DVD {
     // TODO: Implement your custom interface.
-    public class DVD extends BaseDisc implements OpticalDisc {
-        public DVD(String name, double capacity, String contents, String discType) {
+    public class dvd extends BaseDisc implements OpticalDisc {
+        public dvd(String name, double capacity, String contents, String discType) {
             super(name, capacity, contents, discType);
         }
 
